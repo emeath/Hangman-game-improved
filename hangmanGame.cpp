@@ -4,96 +4,14 @@
 #include <vector>
 #include <fstream>
 
+#include "letter_exists.cpp"
+#include "not_guessed_all_letter_right.cpp"
+
 using namespace std;
 
-string secret_word = "BANANA";
+string secret_word;
 map<char, bool> letter_already_guessed;
 vector<char> wrong_guesses;
-
-bool letter_exists(char guess)
-{
-    for (char letter : secret_word)
-    {
-        if (guess == letter)
-        {
-            return true;
-        }
-    }
-
-    return false;
-}
-
-bool not_guessed_all_letter_right()
-{
-    for (char letter : secret_word)
-    {
-        if (!letter_already_guessed[letter])
-        {
-            return true;
-        }
-    }
-    return false;
-}
-
-bool not_hanged()
-{
-    return wrong_guesses.size() < 5;
-}
-
-void prints_header()
-{
-
-    cout << "+++++++++++++++++++++++++++++++++++" << endl;
-    cout << "+          Hangman Game           +" << endl;
-    cout << "+++++++++++++++++++++++++++++++++++" << endl;
-    cout << endl;
-}
-
-void prints_errors()
-{
-    cout << "Wrong guesses: ";
-    for (char letter : wrong_guesses)
-    {
-        cout << letter << " ";
-    }
-    cout << endl;
-}
-
-void prints_word()
-{
-    for (char letter : secret_word)
-    {
-        if (letter_already_guessed[letter])
-        {
-            cout << letter << " ";
-        }
-        else
-        {
-            cout << "_ ";
-        }
-    }
-    cout << endl;
-}
-
-void player_guesses()
-{
-    cout << "Your guess: ";
-
-    char guess;
-    cin >> guess;
-    if (letter_exists(guess))
-    {
-        cout << "Correct guess!" << endl;
-        letter_already_guessed[guess] = true;
-    }
-    else
-    {
-        cout << "Wrong guess!" << endl;
-        wrong_guesses.push_back(guess);
-    }
-
-    cout << endl;
-}
 
 vector<string> reads_file()
 {
