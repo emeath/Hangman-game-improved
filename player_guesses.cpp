@@ -2,6 +2,9 @@
 #include <map>
 #include <vector>
 
+#include "reads_file.hpp"
+#include "letter_exists.hpp"
+
 std::map<char, bool> letter_already_guessed;
 std::vector<char> wrong_guesses;
 

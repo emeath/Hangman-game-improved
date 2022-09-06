@@ -4,17 +4,17 @@
 #include <vector>
 #include <fstream>
 
-#include "adds_word_in_base.cpp"
-#include "draw_word.cpp"
-#include "letter_exists.cpp"
-#include "not_guessed_all_letter_right.cpp"
-#include "not_hanged.cpp"
-#include "player_guesses.cpp"
-#include "prints_errors.cpp"
-#include "prints_header.cpp"
-#include "prints_word.cpp"
-#include "reads_file.cpp"
-#include "save_file.cpp"
+#include "adds_word_in_base.hpp"
+#include "draw_word.hpp"
+#include "letter_exists.hpp"
+#include "not_guessed_all_letter_right.hpp"
+#include "not_hanged.hpp"
+#include "player_guesses.hpp"
+#include "prints_errors.hpp"
+#include "prints_header.hpp"
+#include "prints_word.hpp"
+#include "reads_file.hpp"
+#include "save_file.hpp"
 
 using namespace std;
 

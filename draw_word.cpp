@@ -1,6 +1,8 @@
 #include <vector>
 #include <string>
 
+#include "reads_file.hpp"
+
 std::string secret_word;
 
 void draw_word()

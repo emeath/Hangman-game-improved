@@ -2,6 +2,9 @@
 #include <vector>
 #include <string>
 
+#include "reads_file.hpp"
+#include "save_file.hpp"
+
 void adds_word_in_base() {
     std::cout << "Enter a new word (use UPPERCASE letter): ";
     std::string new_word;
