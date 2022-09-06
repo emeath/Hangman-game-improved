@@ -1,6 +1,6 @@
 #include <iostream>
-#include <vector>
-#include <string>
+
+#include "adds_word_in_base.hpp"
 
 #include "reads_file.hpp"
 #include "save_file.hpp"

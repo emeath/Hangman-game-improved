@@ -2,8 +2,10 @@
 #include <string>
 #include <map>
 
-std::string secret_word;
-std::map<char, bool> letter_already_guessed;
+#include "prints_word.hpp"
+
+extern std::string secret_word;
+extern std::map<char, bool> letter_already_guessed;
 
 void prints_word()
 {

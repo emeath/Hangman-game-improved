@@ -1,7 +1,9 @@
 #include <iostream>
 #include <vector>
 
-std::vector<char> wrong_guesses;
+#include "prints_errors.hpp"
+
+extern std::vector<char> wrong_guesses;
 
 void prints_errors()
 {

@@ -1,7 +1,9 @@
 #include <vector>
 #include <iostream>
 
-std::vector<char> wrong_guesses;
+#include "not_hanged.hpp"
+
+extern std::vector<char> wrong_guesses;
 
 bool not_hanged()
 {

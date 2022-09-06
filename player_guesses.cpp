@@ -2,11 +2,13 @@
 #include <map>
 #include <vector>
 
+#include "player_guesses.hpp"
+
 #include "reads_file.hpp"
 #include "letter_exists.hpp"
 
-std::map<char, bool> letter_already_guessed;
-std::vector<char> wrong_guesses;
+extern std::map<char, bool> letter_already_guessed;
+extern std::vector<char> wrong_guesses;
 
 void player_guesses()
 {

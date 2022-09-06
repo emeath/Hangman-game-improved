@@ -1,7 +1,7 @@
 #include <iostream>
-#include <vector>
-#include <string>
 #include <fstream>
+
+#include "reads_file.hpp"
 
 std::vector<std::string> reads_file()
 {

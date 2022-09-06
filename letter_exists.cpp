@@ -1,7 +1,9 @@
 #include <iostream>
 #include <string>
 
-std::string secret_word;
+#include "letter_exists.hpp"
+
+extern std::string secret_word;
 
 bool letter_exists(char guess)
 {

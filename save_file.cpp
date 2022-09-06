@@ -1,7 +1,7 @@
 #include <iostream>
-#include <vector>
-#include <string>
 #include <fstream>
+
+#include "save_file.hpp"
 
 void save_file(std::vector<std::string> words) {
     std::ofstream file;

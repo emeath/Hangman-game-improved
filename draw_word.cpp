@@ -1,9 +1,11 @@
 #include <vector>
 #include <string>
 
+#include "draw_word.hpp"
+
 #include "reads_file.hpp"
 
-std::string secret_word;
+extern std::string secret_word;
 
 void draw_word()
 {
