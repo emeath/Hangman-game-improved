@@ -2,7 +2,6 @@
 #include <string>
 #include <map>
 #include <vector>
-#include <fstream>
 
 #include "adds_word_in_base.hpp"
 #include "draw_word.hpp"
@@ -16,11 +15,9 @@
 #include "reads_file.hpp"
 #include "save_file.hpp"
 
-using namespace std;
-
-string secret_word;
-map<char, bool> letter_already_guessed;
-vector<char> wrong_guesses;
+std::string secret_word;
+std::map<char, bool> letter_already_guessed;
+std::vector<char> wrong_guesses;
 
 int main()
 {
@@ -33,19 +30,19 @@ int main()
         player_guesses();
     }
 
-    cout << "GAME OVER!" << endl;
-    cout << "The secret word is: " << secret_word << endl;
+    std::cout << "GAME OVER!" << std::endl;
+    std::cout << "The secret word is: " << secret_word << std::endl;
 
     if (not_guessed_all_letter_right())
     {
-        cout << "You lose! Try again!" << endl;
+        std::cout << "You lose! Try again!" << std::endl;
     }
     else
     {
-        cout << "Congratulation! You guessed the secret word!" << endl;
-        cout << "Do you want to add a new word in the base (Y/N)? ";
+        std::cout << "Congratulation! You guessed the secret word!" << std::endl;
+        std::cout << "Do you want to add a new word in the base (Y/N)? ";
         char user_input;
-        cin >> user_input;
+        std::cin >> user_input;
         if(user_input == 'Y') {
             adds_word_in_base();
         }

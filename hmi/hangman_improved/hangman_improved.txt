@@ -1,0 +1,1 @@
+./draw_word.cpp.o ./hangmanGame.cpp.o ./letter_exists.cpp.o ./not_guessed_all_letter_right.cpp.o ./not_hanged.cpp.o ./prints_errors.cpp.o ./reads_file.cpp.o ./save_file.cpp.o ./prints_word.cpp.o ./adds_word_in_base.cpp.o ./player_guesses.cpp.o
