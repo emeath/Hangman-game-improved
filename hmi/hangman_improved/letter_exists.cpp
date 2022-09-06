@@ -1,11 +1,8 @@
 #include <iostream>
-#include <string>
 
 #include "letter_exists.hpp"
 
-extern std::string secret_word;
-
-bool letter_exists(char guess)
+bool letter_exists(char guess, std::string secret_word)
 {
     for (char letter : secret_word)
     {

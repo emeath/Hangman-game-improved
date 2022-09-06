@@ -1,3 +1,3 @@
 #pragma once
-
-void draw_word();
+#include <string>
+std::string draw_word();

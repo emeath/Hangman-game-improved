@@ -1,12 +1,8 @@
 #include <iostream>
-#include <map>
 
 #include "not_guessed_all_letter_right.hpp"
 
-extern std::string secret_word;
-extern std::map<char, bool> letter_already_guessed;
-
-bool not_guessed_all_letter_right()
+bool not_guessed_all_letter_right(std::string secret_word, std::map<char, bool> letter_already_guessed)
 {
     for (char letter : secret_word)
     {

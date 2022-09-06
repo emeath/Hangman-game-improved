@@ -60,7 +60,7 @@ AS       := as
 ## User defined environment variables
 ##
 CodeLiteDir:=/usr/share/codelite
-Objects0=$(IntermediateDirectory)/draw_word.cpp$(ObjectSuffix) $(IntermediateDirectory)/hangmanGame.cpp$(ObjectSuffix) $(IntermediateDirectory)/letter_exists.cpp$(ObjectSuffix) $(IntermediateDirectory)/not_guessed_all_letter_right.cpp$(ObjectSuffix) $(IntermediateDirectory)/not_hanged.cpp$(ObjectSuffix) $(IntermediateDirectory)/prints_errors.cpp$(ObjectSuffix) $(IntermediateDirectory)/reads_file.cpp$(ObjectSuffix) $(IntermediateDirectory)/save_file.cpp$(ObjectSuffix) $(IntermediateDirectory)/prints_word.cpp$(ObjectSuffix) $(IntermediateDirectory)/adds_word_in_base.cpp$(ObjectSuffix) \
+Objects0=$(IntermediateDirectory)/draw_word.cpp$(ObjectSuffix) $(IntermediateDirectory)/hangmanGame.cpp$(ObjectSuffix) $(IntermediateDirectory)/letter_exists.cpp$(ObjectSuffix) $(IntermediateDirectory)/not_guessed_all_letter_right.cpp$(ObjectSuffix) $(IntermediateDirectory)/prints_errors.cpp$(ObjectSuffix) $(IntermediateDirectory)/reads_file.cpp$(ObjectSuffix) $(IntermediateDirectory)/save_file.cpp$(ObjectSuffix) $(IntermediateDirectory)/prints_word.cpp$(ObjectSuffix) $(IntermediateDirectory)/not_hanged.cpp$(ObjectSuffix) $(IntermediateDirectory)/adds_word_in_base.cpp$(ObjectSuffix) \
 	$(IntermediateDirectory)/player_guesses.cpp$(ObjectSuffix) 
 
 
@@ -124,14 +124,6 @@ $(IntermediateDirectory)/not_guessed_all_letter_right.cpp$(DependSuffix): not_gu
 $(IntermediateDirectory)/not_guessed_all_letter_right.cpp$(PreprocessSuffix): not_guessed_all_letter_right.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/not_guessed_all_letter_right.cpp$(PreprocessSuffix) not_guessed_all_letter_right.cpp
 
-$(IntermediateDirectory)/not_hanged.cpp$(ObjectSuffix): not_hanged.cpp $(IntermediateDirectory)/not_hanged.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/mm/Workspaces/ws-cpp/Hangman-game-improved/hmi/hangman_improved/not_hanged.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/not_hanged.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/not_hanged.cpp$(DependSuffix): not_hanged.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/not_hanged.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/not_hanged.cpp$(DependSuffix) -MM not_hanged.cpp
-
-$(IntermediateDirectory)/not_hanged.cpp$(PreprocessSuffix): not_hanged.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/not_hanged.cpp$(PreprocessSuffix) not_hanged.cpp
-
 $(IntermediateDirectory)/prints_errors.cpp$(ObjectSuffix): prints_errors.cpp $(IntermediateDirectory)/prints_errors.cpp$(DependSuffix)
 	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/mm/Workspaces/ws-cpp/Hangman-game-improved/hmi/hangman_improved/prints_errors.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/prints_errors.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/prints_errors.cpp$(DependSuffix): prints_errors.cpp
@@ -163,6 +155,14 @@ $(IntermediateDirectory)/prints_word.cpp$(DependSuffix): prints_word.cpp
 
 $(IntermediateDirectory)/prints_word.cpp$(PreprocessSuffix): prints_word.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/prints_word.cpp$(PreprocessSuffix) prints_word.cpp
+
+$(IntermediateDirectory)/not_hanged.cpp$(ObjectSuffix): not_hanged.cpp $(IntermediateDirectory)/not_hanged.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/mm/Workspaces/ws-cpp/Hangman-game-improved/hmi/hangman_improved/not_hanged.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/not_hanged.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/not_hanged.cpp$(DependSuffix): not_hanged.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/not_hanged.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/not_hanged.cpp$(DependSuffix) -MM not_hanged.cpp
+
+$(IntermediateDirectory)/not_hanged.cpp$(PreprocessSuffix): not_hanged.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/not_hanged.cpp$(PreprocessSuffix) not_hanged.cpp
 
 $(IntermediateDirectory)/adds_word_in_base.cpp$(ObjectSuffix): adds_word_in_base.cpp $(IntermediateDirectory)/adds_word_in_base.cpp$(DependSuffix)
 	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/mm/Workspaces/ws-cpp/Hangman-game-improved/hmi/hangman_improved/adds_word_in_base.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/adds_word_in_base.cpp$(ObjectSuffix) $(IncludePath)

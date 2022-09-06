@@ -1,13 +1,8 @@
 #include <iostream>
-#include <string>
-#include <map>
 
 #include "prints_word.hpp"
 
-extern std::string secret_word;
-extern std::map<char, bool> letter_already_guessed;
-
-void prints_word()
+void prints_word(std::string secret_word, std::map<char, bool> letter_already_guessed)
 {
     for (char letter : secret_word)
     {

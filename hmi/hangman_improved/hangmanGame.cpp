@@ -15,25 +15,28 @@
 #include "reads_file.hpp"
 #include "save_file.hpp"
 
-std::string secret_word;
-std::map<char, bool> letter_already_guessed;
-std::vector<char> wrong_guesses;
+
 
 int main()
 {
+	std::string secret_word;
+	std::map<char, bool> letter_already_guessed;
+	std::vector<char> wrong_guesses;
+	
     prints_header();
-    draw_word();
-    while (not_guessed_all_letter_right() && not_hanged())
+    secret_word = draw_word();
+    while (not_guessed_all_letter_right(secret_word, letter_already_guessed) && 
+		not_hanged(wrong_guesses))
     {
-        prints_errors();
-        prints_word();
-        player_guesses();
+        prints_errors(wrong_guesses);
+        prints_word(secret_word, letter_already_guessed);
+        player_guesses(&letter_already_guessed, &wrong_guesses, secret_word);
     }
 
     std::cout << "GAME OVER!" << std::endl;
     std::cout << "The secret word is: " << secret_word << std::endl;
 
-    if (not_guessed_all_letter_right())
+    if (not_guessed_all_letter_right(secret_word, letter_already_guessed))
     {
         std::cout << "You lose! Try again!" << std::endl;
     }
