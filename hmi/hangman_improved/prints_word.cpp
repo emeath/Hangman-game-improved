@@ -2,7 +2,7 @@
 
 #include "prints_word.hpp"
 
-void prints_word(std::string secret_word, std::map<char, bool> letter_already_guessed)
+void prints_word(std::string& secret_word, std::map<char, bool>& letter_already_guessed)
 {
     for (char letter : secret_word)
     {

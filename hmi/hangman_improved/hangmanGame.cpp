@@ -30,7 +30,7 @@ int main()
     {
         prints_errors(wrong_guesses);
         prints_word(secret_word, letter_already_guessed);
-        player_guesses(&letter_already_guessed, &wrong_guesses, secret_word);
+        player_guesses(letter_already_guessed, wrong_guesses, secret_word);
     }
 
     std::cout << "GAME OVER!" << std::endl;
