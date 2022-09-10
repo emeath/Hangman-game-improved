@@ -2,7 +2,7 @@
 
 #include "letter_exists.hpp"
 
-bool letter_exists(char guess, std::string secret_word)
+bool letter_exists(const char& guess, const std::string& secret_word)
 {
     for (char letter : secret_word)
     {

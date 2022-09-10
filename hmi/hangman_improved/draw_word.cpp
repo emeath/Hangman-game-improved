@@ -4,8 +4,6 @@
 
 #include "reads_file.hpp"
 
-extern std::string secret_word;
-
 std::string draw_word()
 {
     std::vector<std::string> words = reads_file();

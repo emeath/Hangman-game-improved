@@ -5,7 +5,7 @@
 #include "reads_file.hpp"
 #include "letter_exists.hpp"
 
-void player_guesses(std::map<char, bool>& letter_already_guessed, std::vector<char>& wrong_guesses, std::string& secret_word)
+void player_guesses(std::map<char, bool>& letter_already_guessed, std::vector<char>& wrong_guesses, const std::string& secret_word)
 {
     std::cout << "Your guess: ";
 

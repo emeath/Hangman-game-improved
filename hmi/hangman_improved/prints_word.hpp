@@ -2,4 +2,4 @@
 #include <string>
 #include <map>
 
-void prints_word(std::string& secret_word, std::map<char, bool>& letter_already_guessed);
+void prints_word(const std::string& secret_word, const std::map<char, bool>& letter_already_guessed);

@@ -1,4 +1,4 @@
 #pragma once
 #include <string>
 
-bool letter_exists(char guess, std::string secret_word);
+bool letter_exists(const char& guess, const std::string& secret_word);
