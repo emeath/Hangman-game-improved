@@ -15,14 +15,12 @@
 #include "reads_file.hpp"
 #include "save_file.hpp"
 
-
+static std::string secret_word;
+static std::map<char, bool> letter_already_guessed;
+static std::vector<char> wrong_guesses;
 
 int main()
 {
-	std::string secret_word;
-	std::map<char, bool> letter_already_guessed;
-	std::vector<char> wrong_guesses;
-	
     prints_header();
     secret_word = draw_word();
     while (not_guessed_all_letter_right(secret_word, letter_already_guessed) && 
