@@ -1,40 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Session Name="/home/mm/Workspaces/ws-cpp/Hangman-game-improved/hmi/hmi.workspace">
-  <int Value="4" Name="m_selectedTab"/>
+  <int Value="0" Name="m_selectedTab"/>
   <wxString Value="/home/mm/Workspaces/ws-cpp/Hangman-game-improved/hmi/hmi.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
       <wxString Value="/home/mm/Workspaces/ws-cpp/Hangman-game-improved/hmi/hangman_improved/hangmanGame.cpp" Name="FileName"/>
-      <int Value="9" Name="FirstVisibleLine"/>
-      <int Value="32" Name="CurrentLine"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="11" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
-      <wxString Value="/home/mm/Workspaces/ws-cpp/Hangman-game-improved/hmi/hangman_improved/player_guesses.cpp" Name="FileName"/>
+      <wxString Value="/home/mm/Workspaces/ws-cpp/Hangman-game-improved/hmi/hangman_improved/prints_word.cpp" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="7" Name="CurrentLine"/>
+      <int Value="5" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
-      <wxString Value="/home/mm/Workspaces/ws-cpp/Hangman-game-improved/hmi/hangman_improved/letter_exists.hpp" Name="FileName"/>
+      <wxString Value="/home/mm/Workspaces/ws-cpp/Hangman-game-improved/hmi/hangman_improved/prints_header.hpp" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="1" Name="CurrentLine"/>
+      <int Value="0" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
-      <wxString Value="/home/mm/Workspaces/ws-cpp/Hangman-game-improved/hmi/hangman_improved/letter_exists.cpp" Name="FileName"/>
+      <wxString Value="/home/mm/Workspaces/ws-cpp/Hangman-game-improved/hmi/hangman_improved/prints_word.hpp" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="4" Name="CurrentLine"/>
+      <int Value="5" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
-      <wxString Value="/home/mm/Workspaces/ws-cpp/Hangman-game-improved/hmi/hangman_improved/player_guesses.hpp" Name="FileName"/>
+      <wxString Value="/home/mm/Workspaces/ws-cpp/Hangman-game-improved/hmi/hangman_improved/reads_file.cpp" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="4" Name="CurrentLine"/>
+      <int Value="6" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/home/mm/Workspaces/ws-cpp/Hangman-game-improved/hmi/hangman_improved/reads_file.hpp" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="6" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/home/mm/Workspaces/ws-cpp/Hangman-game-improved/hmi/hangman_improved/adds_word_in_base.cpp" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="13" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/home/mm/Workspaces/ws-cpp/Hangman-game-improved/hmi/hangman_improved/save_file.cpp" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="6" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/home/mm/Workspaces/ws-cpp/Hangman-game-improved/hmi/hangman_improved/save_file.hpp" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="6" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>

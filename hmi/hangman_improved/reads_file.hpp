@@ -3,4 +3,6 @@
 #include <vector>
 #include <string>
 
-std::vector<std::string> reads_file();
+namespace Hangman {
+	std::vector<std::string> reads_file();
+}

@@ -4,12 +4,13 @@
 
 #include "reads_file.hpp"
 
+namespace Hangman {
+	std::string draw_word()
+	{
+		std::vector<std::string> words = reads_file();
+		srand(time(NULL));
+		int draw_index = rand() % words.size();
 
-std::string draw_word()
-{
-    std::vector<std::string> words = reads_file();
-    srand(time(NULL));
-    int draw_index = rand() % words.size();
-
-    return words[draw_index];
+		return words[draw_index];
+	}
 }

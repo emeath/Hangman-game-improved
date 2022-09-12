@@ -1,3 +1,5 @@
 #pragma once
 
-void adds_word_in_base();
+namespace Hangman {
+	void adds_word_in_base();
+}
