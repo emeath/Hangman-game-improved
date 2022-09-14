@@ -1,6 +1,6 @@
 #pragma once
-#include <vector>
+#include <array>
 
 namespace Hangman {
-	bool not_hanged(const std::vector<char> wrong_guesses);
+	bool not_hanged(const int& number_of_wrong_guesses);
 }

@@ -1,6 +1,6 @@
 #pragma once
-#include <vector>
+#include <array>
 
 namespace Hangman {
-	void prints_errors(const std::vector<char>& wrong_guesses);
+	void prints_errors(const std::array<char, 5>& wrong_guesses);
 }

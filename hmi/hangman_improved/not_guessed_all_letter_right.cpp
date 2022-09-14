@@ -7,10 +7,10 @@ namespace Hangman {
 	{
 		for (char letter : secret_word)
 		{
-		if (letter_already_guessed.find(letter) == letter_already_guessed.end() || letter_already_guessed.at(letter) == false)
-			{
-				return true;
-			}
+			if (letter_already_guessed.find(letter) == letter_already_guessed.end() || letter_already_guessed.at(letter) == false)
+				{
+					return true;
+				}
 		}
 		return false;
 	}

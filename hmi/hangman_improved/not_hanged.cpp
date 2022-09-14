@@ -3,8 +3,8 @@
 #include "not_hanged.hpp"
 
 namespace Hangman {
-	bool not_hanged(const std::vector<char> wrong_guesses)
+	bool not_hanged(const int& number_of_wrong_guesses)
 	{
-		return wrong_guesses.size() < 5;
+		return number_of_wrong_guesses < 5;
 	}
 }

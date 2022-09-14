@@ -6,7 +6,10 @@
 #include "letter_exists.hpp"
 
 namespace Hangman {
-	void player_guesses(std::map<char, bool>& letter_already_guessed, std::vector<char>& wrong_guesses, const std::string& secret_word)
+	void player_guesses(std::map<char, bool>& letter_already_guessed, 
+						std::array<char, 5>& wrong_guesses, 
+						int& number_of_wrong_guesses,
+						const std::string& secret_word)
 	{
 		std::cout << "Your guess: ";
 
@@ -20,7 +23,8 @@ namespace Hangman {
 		else
 		{
 			std::cout << "Wrong guess!" << std::endl;
-			wrong_guesses.push_back(guess);
+			wrong_guesses[number_of_wrong_guesses] = guess;
+			number_of_wrong_guesses++;
 		}
 
 		std::cout << std::endl;

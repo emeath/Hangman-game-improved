@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <map>
-#include <vector>
+#include <array>
 
 #include "adds_word_in_base.hpp"
 #include "draw_word.hpp"
@@ -15,18 +15,19 @@
 
 static std::string secret_word;
 static std::map<char, bool> letter_already_guessed;
-static std::vector<char> wrong_guesses;
+static std::array<char, 5> wrong_guesses;
+static int number_of_wrong_guesses = 0;
 
 int main()
 {
     Hangman::prints_header();
     secret_word = Hangman::draw_word();
     while (Hangman::not_guessed_all_letter_right(secret_word, letter_already_guessed) && 
-		Hangman::not_hanged(wrong_guesses))
+			Hangman::not_hanged(number_of_wrong_guesses))
     {
         Hangman::prints_errors(wrong_guesses);
         Hangman::prints_word(secret_word, letter_already_guessed);
-        Hangman::player_guesses(letter_already_guessed, wrong_guesses, secret_word);
+        Hangman::player_guesses(letter_already_guessed, wrong_guesses, number_of_wrong_guesses, secret_word);
     }
 
     std::cout << "GAME OVER!" << std::endl;

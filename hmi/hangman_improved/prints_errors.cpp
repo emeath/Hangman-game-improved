@@ -3,13 +3,14 @@
 #include "prints_errors.hpp"
 
 namespace Hangman {
-	void prints_errors(const std::vector<char>& wrong_guesses)
+	void prints_errors(const std::array<char, 5>& wrong_guesses)
 	{
 		std::cout << "Wrong guesses: ";
-		for (char letter : wrong_guesses)
+		for (long unsigned int i = 0; i < wrong_guesses.size(); i++)
 		{
-			std::cout << letter << " ";
+			std::cout << wrong_guesses[i] << " ";
 		}
 		std::cout << std::endl;
+		
 	}
 }
